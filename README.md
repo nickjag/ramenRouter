@@ -1,16 +1,30 @@
 # ramenRouter
 A super simple PHP URL router to use with small, custom websites. 
 
-## About
+#### About
 ramenRouter is a basic MVC framework that routes URL paths to specified (and optional) controller and view files. 
 
-## Getting Started
+#### Installation
 
-#### Add Ramen
+1. Add Ramen
 
 Add the "ramen" directory to your public directory, along with the index.php and .htaccess files. 
 
-#### Modify the Config File
+```
+|-- your project
+        |-- ramen
+            |-- classes
+				|-- routing.php
+            |-- controllers
+            |-- includes
+				|-- router.php
+			|-- views
+			|-- config.php
+		|-- .htaccess
+        |-- index.php
+```
+
+2. Modify the Config File
 
 Modify the config.php file within the "ramen" directory to your needs. 
 
@@ -29,14 +43,14 @@ $routing_arr = array(
 );
 ```
 
-#### Create your files
+3. Create your files
 
 Create/add your controller and view files for your project. 
 
-## Author
+#### Author
 
 [Nick Jagodzinski](http://nickjag.com)
 
-## Licensing
+#### Licensing
 ramenRouter is available under the MIT license.
 
