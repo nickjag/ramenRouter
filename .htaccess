@@ -1,0 +1,15 @@
+Options -Multiviews -Indexes +FollowSymLinks
+RewriteEngine on
+	
+# remove trailing slash
+	RewriteRule ^(.+)/$ /$1 [R=301,L]
+	
+# rewrite directories
+	RewriteRule ^css/(.*) css/$1 [L]
+	RewriteRule ^js/(.*) js/$1 [L]
+	
+# 404
+	ErrorDocument 404 /error
+
+# index redirect rule
+	RewriteRule ^(.*) index.php?p=$1
