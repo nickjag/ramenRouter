@@ -6,7 +6,7 @@ ramenRouter is a basic MVC framework that routes URL paths to specified (and opt
 
 #### Installation
 
-1. Add Ramen
+**Add Ramen**
 
 Add the "ramen" directory to your public directory, along with the index.php and .htaccess files. 
 
@@ -24,7 +24,7 @@ Add the "ramen" directory to your public directory, along with the index.php and
         |-- index.php
 ```
 
-2. Modify the Config File
+**Modify the Config File**
 
 Modify the config.php file within the "ramen" directory to your needs. 
 
@@ -43,7 +43,7 @@ $routing_arr = array(
 );
 ```
 
-3. Create your files
+**Create your files**
 
 Create/add your controller and view files for your project. 
 
